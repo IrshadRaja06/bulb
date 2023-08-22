@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            padding-left: 10px;
+        }
+        .main{
+            padding: 100px;
+            border: 1px solid black;
+            display: inline-block;
+      
+        }
+        body{
+            padding-top: 100px;
+         
+        }
+
+    </style>
+
+</head>
+<body>
+    <center><div class="main">
+        <img id="bulb" src="./pic_bulboff.gif"><br>
+       <div class="a"> <button type="button" onclick="on()" >ON</button>
+        <button type="button" onclick="off()" >OFF</button></div>
+    </div></center>
+    <script>
+        function off(){
+            document.getElementById("bulb").src="pic_bulboff.gif";
+        }  
+        function on(){
+            document.getElementById("bulb").src="pic_bulbon.gif";
+        }
+    </script>
+</body>
+</html>
